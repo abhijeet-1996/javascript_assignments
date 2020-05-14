@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>the greatest no is <span id="demo"></span>.</p>
+    <script>
+        var arr=[23,1,2,3,4,5,6,7,8,9];
+        document.getElementById("demo").innerHTML=myfun(arr);
+        function myfun(arr1)
+        {
+            return Math.max.apply(null,arr1);
+        }
+    </script>
+</body>
+</html>
