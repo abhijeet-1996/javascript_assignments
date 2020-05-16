@@ -1,0 +1,29 @@
+<html>
+<script>
+class account {
+    constructor(n,b){
+        this.name=n;
+        this.balance=b;
+}
+    deposit(x) {
+        this.balance = this.balance + x; 
+}
+};
+class current_account extends account {
+    constructor(n,b) {
+    super(n,b);
+}
+    withdraw (y) {
+        this.balance = this.balance - y;
+}
+    show() {
+            document.write("<br>" + this.name +"<br>your account balance is "+ this.balance);   
+}
+};
+abhi = new current_account("abhijeet chougule",190000);
+abhi.deposit(20000);
+abhi.show();
+abhi.withdraw(40000);
+abhi.show();
+</script> 
+</html>

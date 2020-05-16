@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<p id="demo"></p>
+
+<script>
+var hello;
+
+hello = x => {
+    var y=1;
+    var z=1;
+    while(y<=x)
+    {
+        z = z * y;
+        ++y;
+    }
+    return z;
+}
+
+document.getElementById("demo").innerHTML ="factorial is" + hello(6);
+</script>
+</html>
