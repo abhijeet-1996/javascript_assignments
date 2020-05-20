@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body
+  {
+  background-color: darkcyan;
+  color: white;
+  padding: 60px;
+  text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <H2 style="color:darkslategray;">FORM VALIDATION</H2>
+  <h4 style="color: deeppink;">All fields are compulsary</h4>
+  <form name="simple" onsubmit="return isvalidate()">
+  <lable>USER ID :</lable><BR>
+  <input id="userid" onchange="isuseridval()"><BR>
+    <label id="idwarn" style="display: none; color: deeppink;">Less than 3 and greater than 15 charcters are not allowed</label>
+    <BR>
+  <lable>PASSWORD :</lable><BR>
+  <input type="password" id="pwd" onchange="ispwdval()"><BR>
+    <label id="pwdwarn" style="display: none; color: deeppink;">please enter atleast 8 charcters </label>
+    <BR>
+  <lable>MOBILE NUMBER :</lable><BR>
+  <input type="number" id="mobile" onchange="ismobval()"><BR>
+    <label id="mbwarn" style="display: none; color: deeppink;">please enter your correct mobile number</label>
+    <BR>
+  <lable>ADDRESS :</lable><BR>
+  <textarea id="address"  cols= "20" rows="5"></textarea>
+  <label id="addwarn" style="display: none; color: deeppink;">please enter your address</label>
+    <BR><BR>
+  <lable>AGE :</lable><BR>
+  <input type="age" id="age" onchange="isageval()"><BR><BR>
+    <label id="agewarn" style="display: none; color: deeppink;">age must be in between 18 to 100</label>
+  <input type="submit">
+<script src="jscode.js">
+</script>
+</body>
+</html>
