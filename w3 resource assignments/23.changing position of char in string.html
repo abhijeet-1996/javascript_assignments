@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let repl = str => {
+            let len = str.length;
+            if(len >=1)
+           {
+            let mid = str.substring(1,len-1);
+            return str[len-1] + mid + str[0];
+           }
+           else
+           return 'string length must be greater or equal to 1';
+        }
+        console.log(repl('chougule'));
+    </script>
+</body>
+</html>

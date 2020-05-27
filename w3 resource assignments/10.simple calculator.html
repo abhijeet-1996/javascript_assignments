@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+        background-color: darkgrey;
+        text-decoration-color: darkolivegreen;
+        }
+        </style> 
+</head>
+<body>
+    <label>1 st no : </label>
+    <input type="number" id="first">
+    <br><br>
+    <label>2 nd no : </label>
+    <input type="number" id="second">
+    <br><br>
+     <button ONCLICK='multi()'> X </button>
+     <button ONCLICK='devide()'> % </button>
+     <p id="mp"></p>
+     <SCRIPt>
+         function multi() {
+             document.getElementById('mp').innerHTML = 'Multiplication of two nos is ' + ((document.getElementById('first').value) * (document.getElementById('second').value));
+         }
+         function devide() {
+             document.getElementById('mp').innerHTML = 'Division of two nos is ' + ((document.getElementById('first').value) / (document.getElementById('second').value));
+         }
+     </SCRIPt>
+</body>
+</html>
