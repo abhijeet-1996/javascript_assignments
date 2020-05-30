@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz{
+            background-color: gray;
+            padding: 50px;
+        }
+    </style>
+    </head>
+<body>
+   <div id="xyz" >
+  <input type="radio" name = "color" id = "red" value = "red"> : RED<br>
+  <input type="radio" name = "color" id = "blue" value = "blue"> : BLUE <br>
+  <input type="radio" name = "color" id = "white" value = "white"> :  WHITE<br><BR><br>
+    <input type="text" name = "text" id = "text">
+    <button onclick="fun()">try it</button><br><br><br>
+    
+    <p id = "result"> <b>Your name will print here</b></p><br><br>
+
+</div>
+<script>
+    function fun() {
+let ele = document.getElementsByName('color');
+for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) {
+                 var name = document.getElementById("text").value;
+                 document.getElementById('result').innerHTML = name;
+                 document.getElementById('result').style.color = ele[i].value;                
+                }
+            } 
+    }
+</script>
+
+</body>
+</html>

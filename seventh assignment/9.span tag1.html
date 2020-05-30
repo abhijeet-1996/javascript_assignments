@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz{
+            background-color: gray;
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="xyz">
+        enter your text here <br><br>
+        <input type="text" id="text1" onchange="fun()"><br><BR><BR>
+        <span id="abc"></span>
+    </div>
+    <script>
+        function fun() {
+            let x = document.getElementById('text1').value;
+            document.getElementById('abc').innerHTML = x;
+        }
+    </script>
+</body>
+</html>

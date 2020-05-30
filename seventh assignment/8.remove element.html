@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ab{
+            background-color: gray;
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ol id="ab">
+        <li id="ab1">suraj bisure</li>
+        <li id="ab2">avinash shinde</li>
+        <li id="ab3">mohsin awati</li>
+    </ol>
+    <button onclick="fun()">remove</button>
+    <script>
+        function fun() {
+        var parent =document.getElementById('ab');
+        var child = document.getElementById('ab1');
+        parent.removeChild(child);}
+    </script>
+</body>
+</html>

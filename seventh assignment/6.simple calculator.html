@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz{
+            background-color: gray;
+            margin-top: 100px;
+                     
+            color: white;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+   <div id="xyz">
+   <input type="number" id="text1"><br><br>
+   <input type="number" id="text2"><br><br>
+   <input type="radio" name="radio1" value="+">
+   <label>add</label>
+   <input type="radio" name="radio1" value="-">
+   <label>sub</label>
+   <br><br>
+   <button onclick="fun()" > = </button><br><br>
+   <input type="text" id="text3"><br><br>
+   <p id="ab"></p>
+   </div>
+   <script>
+       function fun() {
+           var ele = document.getElementsByName('radio1');
+           var first = document.getElementById('text1').value;
+           var second = document.getElementById('text2').value;
+           for(i=0;i<ele.length;i++)
+           {
+               if(ele[i].checked)
+               {
+                   switch (ele[i].value)
+                   {
+                   case '+':document.getElementById('text3').value = parseInt(first) + parseInt(second);
+                            break;
+                   case '-':document.getElementById('text3').value = first - second;
+                            break;         
+                   }
+
+               }
+           }
+       }
+   </script>
+</body>
+</html>

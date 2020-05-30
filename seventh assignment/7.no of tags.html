@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>my name is abhijeet chougule</p>
+    <p>i'm doing post graduation dac in sm-vita</p>
+    <p>i am 23 years old</p>
+    <p id="abc"></p>
+    <script>
+    let x = document.getElementsByTagName('p');
+    document.getElementById('abc').innerHTML = x.length;
+    for(i=0;i<x.length;i++)
+    {
+        x[i].style.backgroundColor = 'blue';
+        x[i].style.color = 'white'
+    }
+    </script>
+    
+</body>
+</html>
