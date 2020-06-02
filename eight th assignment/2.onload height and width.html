@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz {
+            background-color: gray;
+            color: white;
+            padding: 100px;
+            text-align: center;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body onload="fun()">
+    <div id="xyz">
+    <h2 id="hw"></h2>
+    </div>
+    <script>
+        document.getElementById('hw').innerHTML = "The screen width is " + window.innerWidth  + ' and height is ' + window.innerHeight;
+    </script>
+</body>
+</html>

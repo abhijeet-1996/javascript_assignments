@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz {
+            background-color: gray;
+            color: white;
+            padding: 100px;
+            text-align: center;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="xyz">
+        <input type="text" id="abc"><br><br>
+        <button onclick="createcookie()">create cookie</button>
+        <button onclick="readcookie()">read cookie</button>
+        <h3 id="bcd"></h3>
+    </div>
+
+    <script>
+function createcookie()
+{
+    var textc = document.getElementById('abc').value.toString();
+    if(textc.length == 0)
+    alert("please enter some text");
+    else
+    {
+        document.cookie = "'usernamename =' + textc";
+        alert("cookie created successfully");
+    }
+}
+function readcookie()
+{
+    let a = document.cookie.toString();
+alert (a);
+}
+    </script>
+</body>
+</html>

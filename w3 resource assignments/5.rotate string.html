@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id) {
+        var a = document.getElementById(id);
+        var t1 = a.childNodes[0];
+        var t = t1.data;
+        setInterval(function () 
+        {
+            t = t[t.length - 1] + t.substring(0, t.length - 1);
+            t1.data = t;
+        },1000);
+
+
+        }
+    </script>
+</head>
+<body onload="fun('target')">
+    <pre id="target">abhijeet chougule</pre>
+
+</body>
+</html>

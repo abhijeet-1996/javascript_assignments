@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xyz {
+            background-color: gray;
+            color: white;
+            padding: 100px;
+            text-align: center;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="xyz">
+    <h1 id="time"></h1>
+    <script>
+        setInterval(fun,1000);
+        function fun() {
+            let digital = new Date();
+            document.getElementById('time').innerHTML = digital.toLocaleTimeString();
+        }
+    </script>
+    </div>
+</body>
+</html>
