@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   function fun() {
+       let color1 = $("input:radio:checked").val();
+       $("textarea").css("color",color1);
+   }
+</script>
+</head>
+<body>
+    <form name = "sampleForm">
+        <input type = "radio"  value = "red"  name="abc" onchange="fun()">red</input><br/><br/>
+        <input type = "radio"  value = "orange"  name="abc"onchange="fun()">orange</input> <br/><br/>
+        <input type = "radio"  value = "cyan"  name="abc"onchange="fun()">cyan</input> <br/><br/>
+        <input type = "radio"  value = "blue"  name="abc" onchange="fun()">blue</input> <br/><br/>
+        <textarea name="textarea" id="t" cols="30" rows="5"></textarea>
+     </form>
+</body>
+</html>

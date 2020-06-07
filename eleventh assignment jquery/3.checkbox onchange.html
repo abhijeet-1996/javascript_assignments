@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>		
+      <script>	 
+         function fun(){
+            $("ol").empty();
+            $.each($("input:checkbox:checked"), function(){            
+                $("ol").append("<li>" + $(this).val() + "</li>")
+            });
+         };
+      </script>
+   </head>	
+   <body>
+         <form name = "sampleForm">
+            <input type = "checkbox"  value = "orange" id="b1" onchange="fun()">orange</input><br/><br/>
+            <input type = "checkbox"  value = "banana" id="b2" onchange="fun()">banana</input> <br/><br/>
+            <input type = "checkbox"  value = "mango" id="b3" onchange="fun()">mango</input> <br/><br/>
+            <input type = "checkbox"  value = "apple" id="b4" onchange="fun()">apple</input> <br/><br/>
+         </form>
+         <b>list of fruits :</b>
+      <ol>
+
+      </ol>
+   </body>	
+</html>
