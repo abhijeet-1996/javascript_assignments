@@ -1,0 +1,37 @@
+<html>
+    <!--<script>
+        "use strict"
+        function bigno(...abc)
+        {
+            let max = abc[0];
+            for(let i=1;i<abc.length;i++)
+            {
+                if(max < abc[i])
+                max = abc[i]
+            }
+            return max;
+        }
+
+        var b = [4,6,32,5,7];
+        var res = bigno(...b);
+        document.write("Max no is "+res);
+    </script> -->
+
+    <script>
+        "use strict"
+        function bigno()
+        {
+            let max = arguments[0];
+            for(let i=1;i<arguments.length;i++)
+            {
+                if(max < arguments[i])
+                max = arguments[i]
+            }
+            return max;
+        }
+
+        var b = [4,6,32,5,99];
+        var res = bigno(...b);
+        document.write("Max number is "+res);
+    </script>
+</html>
